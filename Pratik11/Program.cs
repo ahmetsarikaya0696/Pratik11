@@ -1,29 +1,23 @@
-﻿//Pratik - İlk Sınıfımızı Oluşturuyoruz
-//Bir okul yönetim sistemi yazıyorsunuz.
+﻿using Pratik11;
 
-// Öğrencilerin ve öğretmenlerin bilgilerini yönetmek için Person adında genel bir sınıf oluşturmanız isteniyor. Bu sınıfın özellikleri şunlar olmalı: Ad, Soyad, Doğum Tarihi.
-
-//Person adında bir sınıf oluşturun ve bu özellikleri içeren public property 'ler (get/set) tanımlayın.
-
-//Main metodu içinde, bu sınıftan birkaç öğrenci ve öğretmen nesnesi oluşturun ve bilgilerini konsola yazdırın.
-
-using Pratik11;
-
+// Create a new Person object representing a teacher
 Person teacher = new Person()
 {
-    Name = "Sertan",
-    Surname = "Bozkuş",
-    IsStudent = false
+    Name = "Sertan",     // Assign the teacher's first name
+    Surname = "Bozkuş",  // Assign the teacher's last name
+    IsStudent = false    // Specify that this person is not a student
 };
 
+// Call the method to display the teacher's properties
 teacher.DisplayProperties();
 
+// Create a new Person object representing a student
 Person student = new Person()
 {
-    Name = "Ahmet",
-    Surname = "Sarıkaya",
-    IsStudent = true
+    Name = "Ahmet",      // Assign the student's first name
+    Surname = "Sarıkaya", // Assign the student's last name
+    IsStudent = true     // Specify that this person is a student
 };
 
+// Call the method to display the student's properties
 student.DisplayProperties();
-
